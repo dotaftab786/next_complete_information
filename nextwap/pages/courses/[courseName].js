@@ -4,10 +4,13 @@ import {
 
 const Courses = ()=>{
   const router = useRouter();
-  const { courseName } = router.query;
+  const url = router.query;
   const design = (
     <>
-      <h1>{courseName}</h1>
+      <h1>{url.courseName}</h1>
+      <h1>{url.price}</h1>
+      <h1>{url.title}</h1>
+
     </>
   );
   return design;

@@ -56,7 +56,16 @@ const Courses = ()=>{
                 </Typography>
               </CardContent>
              <CardActions>
-             <Link href={course.link}>
+             <Link href={
+               {
+                 pathname:course.link,
+                 query:{
+                   id: course.id,
+                   title: course.title,
+                   price: course.price
+                 }
+               }
+             }>
               <Button variant="contained" color="secondary">Syllabus</Button>
               </Link>
             </CardActions>
