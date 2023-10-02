@@ -4,7 +4,7 @@ const Index = ()=>{
   const design = (
     <>
       <Layout pageTitle="Homepage">
-        <h1>Homepage</h1>
+        <h1 className="text-danger">Homepage</h1>
         <Image src="/pixel.jpg" width={720} height={480} />
       </Layout>
     </>
