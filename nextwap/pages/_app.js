@@ -18,7 +18,7 @@ import NProgress from "nprogress";
 export default function App({ Component, pageProps }) {
   const theme = createTheme({
     palette:{
-      mode: "dark"
+      mode: "light"
     }
   })
     const router = useRouter();
