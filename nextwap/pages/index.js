@@ -1,10 +1,12 @@
-import Navbar from "../cmp/Navbar/Navbar";
-
+import Layout from "../cmp/Layout/Layout";
+import Image from "next/Image";
 const Index = ()=>{
   const design = (
     <>
-      <Navbar />
-      <h1>Homepage</h1>
+      <Layout pageTitle="Homepage">
+        <h1>Homepage</h1>
+        <Image src="/pixel.jpg" width={720} height={480} />
+      </Layout>
     </>
   );
   return design;
